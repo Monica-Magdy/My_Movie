@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My_Movie</string>
+    <string name="Settings">Settings</string>
+    <string name="pref_sort_label_top_rated">Top-Rated</string>
+    <string name="pref_sort_label_most_popular">Most-Popular</string>
+    <string name="pref_sort_label_favourites">Favourites</string>
+    <string name="pref_sort_label">Sort Via</string>
+
+    <string name="pref_sort_key" translatable="false">sort</string>
+    <string name="pref_sort_top_rated" translatable="false">top-rated</string>
+
+    <string name="pref_sort_most_popular" translatable="false">most-popular</string>
+    <string name="pref_sort_favourites" translatable="false">favourites</string>
+</resources>
