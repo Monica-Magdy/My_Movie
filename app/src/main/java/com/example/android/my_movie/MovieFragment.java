@@ -97,7 +97,7 @@ public class MovieFragment extends Fragment implements LoaderManager.LoaderCallb
         trailers.clear();
         FetchTrailerTask TrailerTask=new FetchTrailerTask();
         try {
-            TrailerTask.onPostExecute(TrailerTask.execute("http://api.themoviedb.org/3/movie/" +ID + "/videos?api_key=e50c010538caf602c4b7e85ee8078ba4").get());
+            TrailerTask.onPostExecute(TrailerTask.execute("http://api.themoviedb.org/3/movie/" +ID + "/videos?api_key=????").get());
         }
         catch (Exception e){Log.e("Error:","is",e);
         }
@@ -110,7 +110,7 @@ public class MovieFragment extends Fragment implements LoaderManager.LoaderCallb
         FetchReviewTask RevTask=new FetchReviewTask();
         try {
 
-            RevTask.onPostExecute(RevTask.execute("http://api.themoviedb.org/3/movie/"+ID+"/reviews?api_key=e50c010538caf602c4b7e85ee8078ba4").get());
+            RevTask.onPostExecute(RevTask.execute("http://api.themoviedb.org/3/movie/"+ID+"/reviews?api_key=????").get());
         }
         catch (Exception e){Log.e("Error:","is",e);
         }
@@ -220,7 +220,7 @@ public class MovieFragment extends Fragment implements LoaderManager.LoaderCallb
             Ids.clear();
             gridview.setAdapter(imageAdapter);
             FetchMovieTask movieTask=new FetchMovieTask();
-            movieTask.execute("http://api.themoviedb.org/3/movie/top_rated?api_key=e50c010538caf602c4b7e85ee8078ba4");
+            movieTask.execute("http://api.themoviedb.org/3/movie/top_rated?api_key=????");
 
         }else if(SortType.equals(getString(R.string.pref_sort_most_popular))) {
             mThumbnails.clear();
@@ -228,7 +228,7 @@ public class MovieFragment extends Fragment implements LoaderManager.LoaderCallb
             Ids.clear();
             gridview.setAdapter(imageAdapter);
             FetchMovieTask movieTask=new FetchMovieTask();
-            movieTask.execute("http://api.themoviedb.org/3/movie/popular?api_key=e50c010538caf602c4b7e85ee8078ba4");
+            movieTask.execute("http://api.themoviedb.org/3/movie/popular?api_key=????");
         }
             else if(SortType.equals("favourites")){
             cursorThumbnails.clear();
